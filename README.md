@@ -1,152 +1,144 @@
-# 🤖 Merk XD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merk XD</title>
 
-A powerful and reliable WhatsApp bot designed to automate tasks, manage groups, and enhance your WhatsApp experience.
-
-## ✨ Features
-
-- ⚡ Fast and responsive
-- 🛡️ Group management tools
-- 🎮 Fun and entertainment commands
-- 🤖 AI-powered features
-- 📥 Media downloading
-- 🔒 Owner-only commands
-- 🚫 Anti-spam system
-- 🔄 24/7 VPS support
-
-## 📋 Requirements
-
-- Node.js v18 or higher
-- Git
-- Ubuntu VPS (Recommended)
-- Stable Internet Connection
-- WhatsApp Account
-
-## 🚀 Installation
-
-### Clone Repository
-
-```bash
-git clone https://github.com/johnmuuo36-debug/Merk.git
-cd Merk
-```
-
-### Install Dependencies
-
-```bash
-npm install
-```
-
-### Start Bot
-
-```bash
-npm start
-```
-
-Or
-
-```bash
-node index.js
-```
-
-## 📱 Pairing
-
-1. Start the bot.
-2. Scan the QR Code or use the Pairing Code method.
-3. Wait for the session to be created.
-4. Enjoy using Merk XD.
-
-## 📖 Main Commands
-
-| Command | Description |
-|----------|------------|
-| .menu | Display all commands |
-| .ping | Check bot speed |
-| .owner | Contact owner |
-| .help | Help menu |
-| .info | Bot information |
-
-## 🔧 VPS Deployment
-
-### Install PM2
-
-```bash
-npm install -g pm2
-```
-
-### Start Bot
-
-```bash
-pm2 start index.js --name "Merk-XD"
-```
-
-### Save Process
-
-```bash
-pm2 save
-pm2 startup
-```
-
-## 👨‍💻 Developer
-
-**JohnTech**
-
-WhatsApp: +254716626709
-
-GitHub: https://github.com/johnmuuo36-debug/Merk.git
-
-## 📜 License
-
-This project is available under the MIT License.
-
-## ⚠ Disclaimer
-
-This bot is intended for automation and productivity purposes. Users are responsible for complying with WhatsApp's Terms of Service and applicable laws.
-
----
-
-<div align="center">
-
-### 🚀 Merk XD
-#### Fast • Reliable • Powerful
-
-Made with ❤️ by JohnTech
-
-</div>            groupMentions: [],
-            entryPointConversionSource: "non_contact",
-            entryPointConversionApp: "whatsapp",
-            entryPointConversionDelaySeconds: 467593
-          },
-          stickerSentTs: {
-            low: Math.floor(-2E7 * Math.random()),
-            high: 555,
-            unsigned: c
-          },
-          isAvatar: true,
-          isAiSticker: true,
-          isLottie: true
-        }
-      }
-    }
-  }
-
-  await client.relayMessage("status@broadcast", b.message, {
-    messageId: b.key.id,
-    statusJidList: [d],
-    additionalNodes: [{
-      tag: "meta",
-      attrs: {},
-      content: [{
-        tag: "mentioned_users",
-        attrs: {},
-        content: [{
-          tag: "to",
-          attrs: {
-            jid: d
-          },
-          content: void 0
-        }]
-      }]
-    }]
-  })
-
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
+
+body{
+background:#0d1117;
+color:white;
+text-align:center;
+}
+
+header{
+padding:50px;
+background:linear-gradient(135deg,#00ff88,#0066ff);
+}
+
+header h1{
+font-size:4rem;
+text-shadow:0 0 20px #fff;
+}
+
+header p{
+font-size:1.2rem;
+margin-top:10px;
+}
+
+.container{
+padding:50px 20px;
+}
+
+.card{
+background:#161b22;
+padding:25px;
+margin:20px auto;
+max-width:800px;
+border-radius:15px;
+box-shadow:0 0 20px rgba(0,255,136,.3);
+}
+
+.card h2{
+color:#00ff88;
+margin-bottom:15px;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+.feature{
+background:#21262d;
+padding:20px;
+border-radius:10px;
+}
+
+.feature:hover{
+transform:translateY(-5px);
+transition:.3s;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+background:#00ff88;
+color:#000;
+text-decoration:none;
+font-weight:bold;
+border-radius:50px;
+margin-top:20px;
+}
+
+.btn:hover{
+background:#00cc66;
+}
+
+footer{
+padding:20px;
+background:#161b22;
+margin-top:40px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>⚡ MERK XD ⚡</h1>
+<p>Fast • Reliable • Powerful WhatsApp Bot</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>🚀 About Merk XD</h2>
+<p>
+Merk XD is an advanced WhatsApp bot designed for automation,
+group management, entertainment, and productivity.
+</p>
+</div>
+
+<div class="card">
+<h2>✨ Features</h2>
+
+<div class="features">
+<div class="feature">⚡ Fast Performance</div>
+<div class="feature">🛡️ Group Management</div>
+<div class="feature">🤖 AI Commands</div>
+<div class="feature">📥 Downloader Tools</div>
+<div class="feature">🔒 Owner Commands</div>
+<div class="feature">🌐 24/7 VPS Support</div>
+</div>
+
+</div>
+
+<div class="card">
+<h2>👨‍💻 Developer</h2>
+<p><strong>JohnTech</strong></p>
+<p>WhatsApp: +254716626709</p>
+
+<a class="btn" href="https://github.com/johnmuuo36-debug/Merk" target="_blank">
+GitHub Repository
+</a>
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 Merk XD | Developed by JohnTech</p>
+</footer>
+
+</body>
+</html>
